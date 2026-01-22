@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SenseWhy Education</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Playfair+Display:ital,wght@0,500;0,700;1,500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --ink: #1f1f1f;
+      --muted: #5f5f5f;
+      --accent: #2f6f73;
+      /* --paper: #faf9f6; */
+      --paper: #FAF3E7;
+      --line: #e1e1dc;
+      
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Libre Baskerville', serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+
+    header {
+      padding: 4rem 2rem 3rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .logo-placeholder {
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      /* border: 2px dashed var(--line); */
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-style: italic;
+      color: var(--muted);
+      background: #FAF3E7;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      line-height: 1.2;
+      margin: 0 0 1rem;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin: 0 0 1.25rem;
+      color: var(--muted);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 3rem;
+    }
+
+    .highlight-box {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 2rem;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+      margin: 0;
+    }
+
+    li {
+      margin-bottom: 0.75rem;
+    }
+
+    .course-card {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 2.5rem;
+    }
+
+    .course-meta {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+      font-size: 0.95rem;
+    }
+
+    .meta-label {
+      font-weight: 700;
+      color: var(--ink);
+      display: block;
+    }
+
+    footer {
+      padding: 3rem 2rem;
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 900px) {
+      .hero,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container hero">
+      <div>
+        <h1 style="font-size: 5rem;">SenseWhy <br />Education</h1>
+        <p>
+          SenseWhy Education is an independent learning collective bringing
+          world‑class professors and practitioners together to offer immersive,
+          small‑cohort educational experiences.
+        </p>
+        <p>
+          We are not affiliated with any university. Instead, we focus on
+          intellectual depth, practical insight, and the human context in which
+          learning actually happens.
+        </p>
+      </div>
+      <div class="logo-placeholder">
+        <img src="./logo.png" style="width: 66%;">
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container two-col">
+      <div>
+        <h2>Our Philosophy</h2>
+        <p>
+          Education should sharpen judgment, expand perspective, and connect
+          ideas to lived experience. At SenseWhy, courses are designed and led
+          by top professors who value clarity of thought over credentialism.
+        </p>
+        <p>
+          Each offering blends rigorous instruction with discussion, reflection,
+          and exposure to place — because learning is richer when grounded in
+          real environments and shared experiences.
+        </p>
+      </div>
+      <div class="highlight-box">
+        <strong>What Sets Us Apart</strong>
+        <ul>
+          <li>Faculty drawn from leading academic institutions</li>
+          <li>Independent, non‑degree education model</li>
+          <li>Small cohorts and high‑touch instruction</li>
+          <li>Learning integrated with culture and place</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Current Course Offering</h2>
+      <div class="course-card">
+        <h3>Designing Sensor Systems for Mobile & Digital Health</h3>
+        <p>
+          Our inaugural course is an intensive, in‑person program hosted in
+          <strong>Chicago, Illinois</strong>. Designed as a week‑long immersion,
+          the course combines daily seminars with curated local experiences.
+        </p>
+        <p>
+          Lodging is included, along with guided explorations of Chicago’s
+          intellectual, architectural, and cultural landscape — reinforcing
+          course themes through the city itself.
+        </p>
+
+        <div class="course-meta">
+          <div>
+            <span class="meta-label">Location</span>
+            Chicago, IL
+          </div>
+          <div>
+            <span class="meta-label">Format</span>
+            In‑person, small cohort
+          </div>
+          <div>
+            <span class="meta-label">Includes</span>
+            Lodging + local experiences
+          </div>
+          <div>
+            <span class="meta-label">Instruction</span>
+            Led by senior faculty
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      © <span id="year"></span> SenseWhy Education · Independent Education Collective
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
